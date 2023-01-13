@@ -32,39 +32,39 @@ invalidAmountDepsoitString	BYTE "Invalid Deposit Amount.", 0dh, 0ah, 0
 enterWithdrawAmountString	BYTE "Withdraw Amount: ", 0
 invalidAmountWithdrawString	BYTE "Invalid Withdraw Amount.", 0dh, 0ah, 0
 
-cardNumber				BYTE 17 DUP(0)
-accountPINNumber		BYTE 5 DUP(0)
+cardNumber		BYTE 17 DUP(0)
+accountPINNumber	BYTE 5 DUP(0)
 
 transferAccountNumber	BYTE 17 DUP(0)
 
-masterCardInfoString		BYTE "Master Card is Detected...", 0ah, 0dh, 0
-visaCardInfoString			BYTE "Visa Card is Detected...", 0ah, 0dh, 0
+masterCardInfoString	BYTE "Master Card is Detected...", 0ah, 0dh, 0
+visaCardInfoString		BYTE "Visa Card is Detected...", 0ah, 0dh, 0
 americanExpressInfoString	BYTE "American Express Card is Detected...", 0ah, 0dh, 0
 
-accountNumbers		DWORD	OFFSET userAccount_1, OFFSET userAccount_2
+accountNumbers	DWORD	OFFSET userAccount_1, OFFSET userAccount_2
 
-accountPINS			DWORD	OFFSET userAccountPIN_1, OFFSET userAccountPIN_2
+accountPINS		DWORD	OFFSET userAccountPIN_1, OFFSET userAccountPIN_2
 
-accountHolders		DWORD	OFFSET userAccountHolder_1, OFFSET userAccountHolder_2
+accountHolders	DWORD	OFFSET userAccountHolder_1, OFFSET userAccountHolder_2
 
 accountHoldersBalance	DWORD	OFFSET userAccountHolderBalance_1, OFFSET userAccountHolderBalance_2
 
-userAccount_1				BYTE "3714496353984310", 0
-userAccount_2				BYTE "5555555555554420", 0
+userAccount_1	BYTE "3714496353984310", 0
+userAccount_2	BYTE "5555555555554420", 0
 
-userAccountPIN_1			BYTE "2345", 0
-userAccountPIN_2			BYTE "3456", 0
+userAccountPIN_1	BYTE "2345", 0
+userAccountPIN_2	BYTE "3456", 0
 
-userAccountHolder_1			BYTE "Farasat Khan", 0dh, 0ah, 0
-userAccountHolder_2			BYTE "Junaid Ali", 0dh, 0ah, 0
+userAccountHolder_1		BYTE "Farasat Khan", 0dh, 0ah, 0
+userAccountHolder_2		BYTE "Junaid Ali", 0dh, 0ah, 0
 
 userAccountHolderBalance_1	DWORD 75000
 userAccountHolderBalance_2	DWORD 23000
 
-currentOpenedAccountID		DWORD ?
-transferAccountID			DWORD ?
+currentOpenedAccountID	DWORD ?
+transferAccountID	DWORD ?
 
-EXIT_FLAG					BYTE  0
+EXIT_FLAG	BYTE  0
 
 sameAccountString			BYTE "Same Account, Cant transfer.", 0dh, 0ah, 0
 enterTransferAmountString	BYTE "Transfer Amount: ", 0
