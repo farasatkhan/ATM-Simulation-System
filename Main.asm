@@ -17,10 +17,10 @@ welcomeString		BYTE "Welcome, ", 0
 depositAmountString	BYTE "1. Deposit Money", 0ah, 0dh, 0
 withdrawAmountString	BYTE "2. Withdraw Money", 0ah, 0dh, 0
 transferAmountString	BYTE "3. Transfer Money", 0ah, 0dh, 0
-checkBalanceString		BYTE "4. Check Balance", 0ah, 0dh, 0
-exitHomePageString		BYTE "5. Exit", 0ah, 0dh, 0
+checkBalanceString	BYTE "4. Check Balance", 0ah, 0dh, 0
+exitHomePageString	BYTE "5. Exit", 0ah, 0dh, 0
 
-pickOptionString		BYTE "Pick One of the Option: ", 0
+pickOptionString	BYTE "Pick One of the Option: ", 0
 invalidPickOptionString	BYTE "Invalid Number is Entered. Try Again!", 0dh, 0ah, 0
 
 currentBalanceString	BYTE "Current Account Balance is: ", 0
@@ -37,7 +37,7 @@ accountPINNumber	BYTE 5 DUP(0)
 
 transferAccountNumber	BYTE 17 DUP(0)
 
-masterCardInfoString	BYTE "Master Card is Detected...", 0ah, 0dh, 0
+masterCardInfoString		BYTE "Master Card is Detected...", 0ah, 0dh, 0
 visaCardInfoString		BYTE "Visa Card is Detected...", 0ah, 0dh, 0
 americanExpressInfoString	BYTE "American Express Card is Detected...", 0ah, 0dh, 0
 
@@ -66,12 +66,12 @@ transferAccountID	DWORD ?
 
 EXIT_FLAG	BYTE  0
 
-sameAccountString			BYTE "Same Account, Cant transfer.", 0dh, 0ah, 0
+sameAccountString	BYTE "Same Account, Cant transfer.", 0dh, 0ah, 0
 enterTransferAmountString	BYTE "Transfer Amount: ", 0
 invalidAmountTransferString	BYTE "Invalid Transfer Amount.", 0
 
-changeAccountString			BYTE "Do you want to Enter New Credit Card (0: No, 1: Yes): ", 0
-changeAccountOption			DWORD 0
+changeAccountString		BYTE "Do you want to Enter New Credit Card (0: No, 1: Yes): ", 0
+changeAccountOption		DWORD 0
 invalidChangeAccountString	BYTE "Invalid Change Account Option. Try again!", 0dh, 0ah, 0
 
 .code
