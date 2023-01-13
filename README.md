@@ -1,4 +1,5 @@
 # ATM-Simulation-System
+The Project is created using Assembly Language with the help of Irvine Library.
 
 ## Project Description:
 Automated Teller Machine (ATM) Simulation will simulate real world ATM machines. The ATM Simulation will allow customer console for interaction with the customer, a slot for depositing money, a way to withdraw an amount. The ATM simulation will generate a customer receipt when a user withdraws an amount.
