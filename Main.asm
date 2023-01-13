@@ -1,30 +1,30 @@
 Include Irvine32.inc
 
 .data
-cardNumberString			BYTE "Enter your Card: ", 0
-invalidCardNumberString		BYTE "Invalid Card Number. Kindly Enter Again", 0ah, 0dh, 0
-validCardNumberString		BYTE "The Card is Valid", 0ah, 0dh, 0
+cardNumberString		BYTE "Enter your Card: ", 0
+invalidCardNumberString	BYTE "Invalid Card Number. Kindly Enter Again", 0ah, 0dh, 0
+validCardNumberString	BYTE "The Card is Valid", 0ah, 0dh, 0
 
-pinNumberString				BYTE "Enter PIN Number: ", 0
-invalidPINNumberString		BYTE "Invalid PIN Number. Kindly Enter Again", 0ah, 0dh, 0
-validPINumberString			BYTE "The PIN Number is Valid", 0ah, 0dh, 0
+pinNumberString			BYTE "Enter PIN Number: ", 0
+invalidPINNumberString	BYTE "Invalid PIN Number. Kindly Enter Again", 0ah, 0dh, 0
+validPINumberString		BYTE "The PIN Number is Valid", 0ah, 0dh, 0
 
-transferAccountString		BYTE "Enter Account Number: ", 0
+transferAccountString	BYTE "Enter Account Number: ", 0
 
-homepageWelcomeString		BYTE "Welcome to Home Page, ", 0
-welcomeString				BYTE "Welcome, ", 0
+homepageWelcomeString	BYTE "Welcome to Home Page, ", 0
+welcomeString			BYTE "Welcome, ", 0
 
-depositAmountString			BYTE "1. Deposit Money", 0ah, 0dh, 0
-withdrawAmountString		BYTE "2. Withdraw Money", 0ah, 0dh, 0
-transferAmountString		BYTE "3. Transfer Money", 0ah, 0dh, 0
-checkBalanceString			BYTE "4. Check Balance", 0ah, 0dh, 0
-exitHomePageString			BYTE "5. Exit", 0ah, 0dh, 0
+depositAmountString		BYTE "1. Deposit Money", 0ah, 0dh, 0
+withdrawAmountString	BYTE "2. Withdraw Money", 0ah, 0dh, 0
+transferAmountString	BYTE "3. Transfer Money", 0ah, 0dh, 0
+checkBalanceString		BYTE "4. Check Balance", 0ah, 0dh, 0
+exitHomePageString		BYTE "5. Exit", 0ah, 0dh, 0
 
-pickOptionString			BYTE "Pick One of the Option: ", 0
-invalidPickOptionString		BYTE "Invalid Number is Entered. Try Again!", 0dh, 0ah, 0
+pickOptionString		BYTE "Pick One of the Option: ", 0
+invalidPickOptionString	BYTE "Invalid Number is Entered. Try Again!", 0dh, 0ah, 0
 
-currentBalanceString		BYTE "Current Account Balance is: ", 0
-newBalanceString			BYTE "New Account Balance is: ", 0
+currentBalanceString	BYTE "Current Account Balance is: ", 0
+newBalanceString	BYTE "New Account Balance is: ", 0
 
 enterDepositAmountString	BYTE "Deposit Amount: ", 0
 invalidAmountDepsoitString	BYTE "Invalid Deposit Amount.", 0dh, 0ah, 0
@@ -32,26 +32,26 @@ invalidAmountDepsoitString	BYTE "Invalid Deposit Amount.", 0dh, 0ah, 0
 enterWithdrawAmountString	BYTE "Withdraw Amount: ", 0
 invalidAmountWithdrawString	BYTE "Invalid Withdraw Amount.", 0dh, 0ah, 0
 
-cardNumber					BYTE 17 DUP(0)
-accountPINNumber			BYTE 5 DUP(0)
+cardNumber				BYTE 17 DUP(0)
+accountPINNumber		BYTE 5 DUP(0)
 
-transferAccountNumber		BYTE 17 DUP(0)
+transferAccountNumber	BYTE 17 DUP(0)
 
 masterCardInfoString		BYTE "Master Card is Detected...", 0ah, 0dh, 0
 visaCardInfoString			BYTE "Visa Card is Detected...", 0ah, 0dh, 0
 americanExpressInfoString	BYTE "American Express Card is Detected...", 0ah, 0dh, 0
 
-accountNumbers				DWORD	OFFSET userAccount_1,
-									OFFSET userAccount_2
+accountNumbers		DWORD	OFFSET userAccount_1,
+							OFFSET userAccount_2
 
-accountPINS					DWORD	OFFSET userAccountPIN_1,
-									OFFSET userAccountPIN_2
+accountPINS			DWORD	OFFSET userAccountPIN_1,
+							OFFSET userAccountPIN_2
 
-accountHolders				DWORD	OFFSET userAccountHolder_1,
-									OFFSET userAccountHolder_2
+accountHolders		DWORD	OFFSET userAccountHolder_1,
+							OFFSET userAccountHolder_2
 
-accountHoldersBalance		DWORD	OFFSET userAccountHolderBalance_1,
-									OFFSET userAccountHolderBalance_2
+accountHoldersBalance	DWORD	OFFSET userAccountHolderBalance_1,
+								OFFSET userAccountHolderBalance_2
 
 userAccount_1				BYTE "3714496353984310", 0
 userAccount_2				BYTE "5555555555554420", 0
